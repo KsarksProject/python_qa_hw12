@@ -13,7 +13,8 @@ class PracticeFormPage:
 
     def open(self):
         # Открытие страницы и удаление мешающих элементов
-        browser.open('https://demoqa.com/automation-practice-form')
+        browser.open('https://ya.ru')
+        # browser.open('https://demoqa.com/automation-practice-form')
         browser.driver.execute_script("$('#fixedban').remove(); $('footer').remove();")
         return self
 

@@ -12,7 +12,7 @@ def test_practice_form(browser_management):
 
     with allure.step("Заполнение полного имени"):
         (practice_form.fill_first_name("Linus")
-                     .fill_last_name("Torvalds"))
+         .fill_last_name("Torvalds"))
 
     with allure.step("Заполнение email"):
         practice_form.fill_email("torvalds@osdl.org")
@@ -28,7 +28,7 @@ def test_practice_form(browser_management):
 
     with allure.step("Выбор интересующих предметов"):
         (practice_form.fill_subject("Accounting")
-                     .fill_subject("Maths"))
+         .fill_subject("Maths"))
 
     with allure.step("Выбор хобби"):
         practice_form.choose_interest_reading()
